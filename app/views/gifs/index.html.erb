@@ -2,14 +2,14 @@
   <% @gifs.each do |gif| %>
     <div class="w-64 m-4 shadow flex flex-col justify-between bg-white">
       <%= link_to image_tag(gif.image_url), gif, class: "mx-auto" %>
-    <div class="text-gray-700 text-center">
-      <div class="p-2">
-        <%= linked_tag_list gif %>
+      <div class="text-gray-700 text-center">
+        <div class="p-2">
+          <%= linked_tag_list gif %>
+        </div>
+        <div class="p-2 text-xs">
+          Uploaded by : <%= link_to gif.user.name, gif.user %>
+        </div>
       </div>
-      <div class="p-2 text-xs">
-        Uploaded by : <%= link_to gif.user.name, gif.user %>
-      </div>
-    </div>
     </div>
   <% end %>
 </div>

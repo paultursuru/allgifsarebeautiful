@@ -16,7 +16,9 @@
       <%= image_tag form.object.image_url %>
     <% else %>
       <%= form.hidden_field :image, value: form.object.cached_image_data %>
-      <%= form.file_field :image %>
+      <%= form.text_field :image_remote_url, placeholder: "URL to image" %>
+      <%= form.label "or upload one" %>
+      <%= form.file_field :image  %>
     <% end %>
   </div>
 

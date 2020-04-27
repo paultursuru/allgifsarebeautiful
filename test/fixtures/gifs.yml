@@ -2,8 +2,8 @@
 
 one:
   user: one
-  image_data: MyText
+  image_data: '<%= TestData.image_data %>'
 
 two:
   user: two
-  image_data: MyText
+  image_data: '<%= TestData.image_data %>'

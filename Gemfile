@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'acts-as-taggable-on', '~> 6.5'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'
-gem 'shrine', '~> 3.2', '>= 3.2.1'
+gem 'shrine', '~> 3.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
